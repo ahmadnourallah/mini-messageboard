@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title><%= title %></title>
+		<link rel="stylesheet" href="/styles.css"/>
+	</head>
+
+	<body>
+		<%- include("header") %>
+		<div class="messages">
+			<% for (let message of messages) { %>
+				<div class="message">
+					<div class="message-user"><%= message.user %></div>
+					<div class="message-text"><%= message.text %></div>
+					<div class="message-timestamp"><%= message.added %></div>
+				</div>
+			<% } %>
+
+		</div>
+	</body>
+</html>

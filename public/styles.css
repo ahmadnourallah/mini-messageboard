@@ -1,0 +1,83 @@
+body {
+	gap: 2rem;
+	background: #f3f4f6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input, textarea {
+	padding: 10px;
+}
+
+a {
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+header {
+	gap: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .new-btn {
+	height: 40px;
+}
+
+header .new-btn a {
+	text-decoration: none;
+}
+
+.message, form {
+	border: 1px solid grey;
+	padding: 10px;
+	margin-bottom: 20px;	
+}
+
+.message > *:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.message-user::before {
+	content: "By ";
+	font-style: italic;
+	font-size: 1.5rem;
+}
+
+.message-user {
+	font-weight: bold;
+}
+
+.message-text {
+	padding-left: 20px;
+}
+
+.message-timestamp::before {
+	content: "Added: ";
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.message-timestamp {
+	margin-top: 40px;
+	font-size: .8rem;
+}
+
+form {
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+form label {
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
