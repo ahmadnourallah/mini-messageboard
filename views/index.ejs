@@ -9,9 +9,9 @@
 		<div class="messages">
 			<% for (let message of messages) { %>
 				<div class="message">
-					<div class="message-user"><%= message.user %></div>
-					<div class="message-text"><%= message.text %></div>
-					<div class="message-timestamp"><%= message.added %></div>
+					<div class="message-user"><%= message.username %></div>
+					<div class="message-text"><%= message.message %></div>
+					<div class="message-timestamp"><%= message.date %></div>
 				</div>
 			<% } %>
 
